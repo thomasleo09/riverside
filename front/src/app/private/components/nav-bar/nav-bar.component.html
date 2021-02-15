@@ -1,0 +1,11 @@
+<nav class="navbar fixed-top navbar-expand-lg transparent_nav">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img class="riverside_logo" srcset="/assets/riverside_logo.png, /assets/riverside_logo@2x.png"
+           alt="Riverside logo">
+    </a>
+    <div class="nav nav-fill nav-items">
+      <a *ngFor="let navItem of navItems" class="nav-link" [href]="navItem.redirect">{{navItem.name}}</a>
+    </div>
+  </div>
+</nav>
