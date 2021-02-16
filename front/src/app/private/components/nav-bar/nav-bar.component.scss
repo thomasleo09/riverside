@@ -1,11 +1,10 @@
-.transparent_nav {
-  background: #0A0A0A;
-  opacity: 0.55;
+.transparent-nav {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.riverside_logo {
-  width: 8rem;
-  height: 8rem;
+.riverside-logo {
+  width: 6rem;
+  height: 6rem;
 }
 
 .nav-link {
@@ -16,4 +15,9 @@
 .nav-items {
   width: 100%;
 }
+
+.navbar-toggler {
+  border-color: #FFFFFF;
+}
+
 

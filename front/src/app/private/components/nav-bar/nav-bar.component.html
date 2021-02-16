@@ -1,11 +1,16 @@
-<nav class="navbar fixed-top navbar-expand-lg transparent_nav">
+<nav class="navbar navbar-dark fixed-top navbar-expand-lg transparent-nav">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img class="riverside_logo" srcset="/assets/riverside_logo.png, /assets/riverside_logo@2x.png"
-           alt="Riverside logo">
+      <img class="riverside-logo" srcset="/assets/riverside_logo.png, /assets/riverside_logo@2x.png" alt="Riverside">
     </a>
-    <div class="nav nav-fill nav-items">
-      <a *ngFor="let navItem of navItems" class="nav-link" [href]="navItem.redirect">{{navItem.name}}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="nav nav-fill nav-items">
+        <a *ngFor="let navItem of navItems" class="nav-link" [href]="navItem.redirect">{{navItem.name}}</a>
+      </div>
     </div>
   </div>
 </nav>
