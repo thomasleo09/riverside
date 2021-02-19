@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {navItem} from '../../../shared/models/nav-item';
+import {Component, OnInit} from '@angular/core';
+import {NavItem} from '../../../shared/models/nav-item';
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,7 +8,7 @@ import {navItem} from '../../../shared/models/nav-item';
 })
 export class NavBarComponent implements OnInit {
 
-  navItems: navItem[] = [
+  navItems: NavItem[] = [
     {
       name: 'Coworking',
       redirect: 'sdas'
@@ -48,7 +48,8 @@ export class NavBarComponent implements OnInit {
   ];
 
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

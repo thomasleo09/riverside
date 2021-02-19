@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {carouselItem} from "../../../shared/models/carousel-item";
+import {CarouselItem} from '../../../shared/models/carousel-item';
 
 @Component({
   selector: 'app-carousel',
@@ -8,7 +8,7 @@ import {carouselItem} from "../../../shared/models/carousel-item";
 })
 export class CarouselComponent implements OnInit {
   baseCarouselImages = 'assets/carousel/';
-  carouselItems: carouselItem[] = [
+  carouselItems: CarouselItem[] = [
     {
       image: 'work.png',
       alt: 'Work image',

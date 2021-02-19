@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { EmptyRouteComponent } from './shared/components/empty-route/empty-route.component';
 import { NavBarComponent } from './private/components/nav-bar/nav-bar.component';
 import { CarouselComponent } from './private/components/carousel/carousel.component';
+import { IntroductionComponent } from './private/components/introduction/introduction.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmptyRouteComponent,
     NavBarComponent,
-    CarouselComponent
+    CarouselComponent,
+    IntroductionComponent
   ],
   imports: [
     BrowserModule,
