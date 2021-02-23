@@ -2,3 +2,18 @@
   font-family: "Metropolis";
   src: local("Metropolis"), url(./assets/fonts/Metropolis.otf) format("truetype");
 }
+
+@font-face {
+  font-family: "DIN";
+  src: local("DIN"), url(./assets/fonts/DIN.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "D-DIN";
+  src: local("D-DIN"), url(./assets/fonts/D-DIN.otf) format("truetype");
+}
+
+b {
+  font-family: "D-DIN", serif;
+  font-weight: bold;
+}

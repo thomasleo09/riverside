@@ -1,0 +1,123 @@
+.coworking-container {
+  padding: 1rem;
+  background-color: #009447;
+}
+
+.coworking-page {
+  padding: 2rem 0 2rem 0;
+  background-color: #FFFFFF;
+}
+
+.coworking-banner {
+  padding: 2rem 0 1rem 0;
+  @media (min-width: 768px) {
+    padding: 2rem 25% 1rem 25%;
+  }
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+.banner-title {
+  font-family: "Metropolis", serif;
+  font-size: 3vw;
+  font-weight: bold;
+  color: #009447;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.coworking-text {
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+  @media (max-width: 576px) {
+    margin: 0 1rem 0 1rem;
+  }
+  margin: 0 5rem 0 5rem;
+}
+
+.coworking-subtext {
+  font-family: "DIN", serif;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.object-group {
+  @media (max-width: 576px) {
+    margin: 0 1rem 0 1rem;
+  }
+  margin: 0 5rem 0 5rem;
+}
+
+.coworking-footer {
+  font-family: "DIN", serif;
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 3vw;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media (min-width: 768px) {
+    padding: 2rem 15% 0 15%;
+  }
+}
+
+.accordion-header {
+  font-family: "Metropolis", serif;
+}
+
+.accordion-button {
+  border: 2px solid;
+  font-weight: bold;
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+.accordion-body {
+  font-family: "DIN", serif;
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+.coworking-image {
+  display: block;
+  width: 100%;
+}
+
+.accordion-title {
+  margin: 0 0 1.5rem 0;
+  @media (max-width: 992px) {
+    margin: 1.5rem 0 1.5rem 0;
+  }
+  font-family: "Metropolis", serif;
+  font-weight: bold;
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+#buttonOne {
+  border-color: #009447;
+}
+
+#buttonTwo {
+  border-color: #1C76B7;
+}
+
+#buttonThree {
+  border-color: #009447;
+}
+
+#buttonFour {
+  border-color: #1C76B7;
+}
+
+#buttonFive {
+  border-color: #009447;
+}

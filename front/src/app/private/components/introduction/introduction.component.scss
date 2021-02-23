@@ -1,17 +1,47 @@
 .introduction-container {
   padding: 1rem;
   background-color: #1C76B7;
-  font-family: "Metropolis", serif;
 }
 
 .introduction-banner {
-  padding: 2rem 0 1rem 0;
+  padding: 2rem 1rem 1rem 1rem;
   @media (min-width: 768px) {
     padding: 2rem 25% 1rem 25%;
   }
   text-align: center;
   background-color: #FFFFFF;
   color: #1C76B7;
+}
+
+.banner-title {
+  font-family: "Metropolis", serif;
+  font-size: 3vw;
+  font-weight: bold;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.banner-text {
+  font-family: "DIN", serif;
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+.introduction-text {
+  font-family: "DIN", serif;
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 2vw;
+  color: #FFFFFF;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+  @media (min-width: 768px) {
+    padding: 2rem 15% 0 15%;
+  }
 }
 
 .cards-group {
@@ -31,43 +61,18 @@
   background-color: #1C76B7;
 }
 
-.card-body {
-  text-align: center;
-  color: #FFFFFF;
-  font-size: 2vw;
-  @media (max-width: 768px) {
-    font-size: 15px;
-  }
-}
-
 .card-title {
+  font-family: "Metropolis", serif;
   font-weight: bold;
 }
 
-
-.banner-title {
-  font-size: 3vw;
-  font-weight: bold;
-  @media (max-width: 768px) {
-    font-size: 20px;
-  }
-}
-
-.banner-text {
-  font-size: 2vw;
-  @media (max-width: 768px) {
-    font-size: 15px;
-  }
-}
-.introduction-text {
-  padding-top: 2rem;
+.card-body {
+  font-family: "DIN", serif;
   text-align: center;
-  font-size: 2vw;
   color: #FFFFFF;
+  font-size: 2vw;
   @media (max-width: 768px) {
     font-size: 15px;
   }
-  @media (min-width: 768px) {
-    padding: 2rem 15% 0 15%;
-  }
 }
+

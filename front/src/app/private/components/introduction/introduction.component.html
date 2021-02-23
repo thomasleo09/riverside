@@ -1,7 +1,7 @@
 <div class="introduction-container">
   <div class="introduction-banner">
     <p class="banner-title">Comunidad mientras te inspiras y mantienes conectado</p>
-    <p class="banner-text">Una experiencia única para conectarse, trabajar, y disfrutar de la naturaleza</p>
+    <p class="banner-text">Una experiencia única para conectarse, trabajar, y disfrutar de la naturaleza.</p>
   </div>
   <div class="introduction-text">
     <p>¿Eres un <b>nómada digital</b>, trabajas remotamente y <b>te encanta viajar?</b> Riverside Ecoliving, ubicado en
@@ -11,7 +11,8 @@
   <div class="cards-group row row-cols-2 row-cols-lg-4">
     <div *ngFor="let introductionItem of introductionItems" class="col">
       <div class="card">
-        <img [src]="baseIntroductionImages+introductionItem.image" class="card-img-top" [alt]="introductionItem.title">
+        <img [src]="baseIntroductionImages + introductionItem.image + imageExtension" class="card-img-top"
+             [alt]="introductionItem.title">
         <div class="card-body">
           <p class="card-title">{{introductionItem.title}}</p>
           <p class="card-text">{{introductionItem.text}}</p>

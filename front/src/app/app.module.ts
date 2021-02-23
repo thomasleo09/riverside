@@ -7,6 +7,8 @@ import { EmptyRouteComponent } from './shared/components/empty-route/empty-route
 import { NavBarComponent } from './private/components/nav-bar/nav-bar.component';
 import { CarouselComponent } from './private/components/carousel/carousel.component';
 import { IntroductionComponent } from './private/components/introduction/introduction.component';
+import { CovidComponent } from './private/components/covid/covid.component';
+import { CoworkingComponent } from './private/components/coworking/coworking.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { IntroductionComponent } from './private/components/introduction/introdu
     EmptyRouteComponent,
     NavBarComponent,
     CarouselComponent,
-    IntroductionComponent
+    IntroductionComponent,
+    CovidComponent,
+    CoworkingComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,70 @@
+.covid-container {
+  padding: 1rem;
+  background-color: #E256AF;
+}
+
+.covid-page {
+  padding: 2rem 0 2rem 0;
+  background-color: #FFFFFF;
+}
+
+.covid-banner {
+  padding: 2rem 0 1rem 0;
+  @media (min-width: 768px) {
+    padding: 2rem 25% 1rem 25%;
+  }
+  text-align: center;
+}
+
+.banner-title {
+  font-family: "Metropolis", serif;
+  font-size: 3vw;
+  font-weight: bold;
+  color: #E256AF;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.banner-text {
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+  display: inline-block;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+}
+
+.covid-text {
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+  @media (max-width: 576px) {
+    margin: 0 1rem 0 1rem;
+  }
+  margin: 0 5rem 0 5rem;
+}
+
+.covid-subtitle {
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.covid-subtext {
+  font-family: "DIN", serif;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.covid-image {
+  height: auto;
+  width: 100%;
+}
+
+.image-container {
+  @media (max-width: 576px) {
+    margin: 2rem 1rem 2rem 1rem;
+  }
+  margin: 2rem 5rem 2rem 5rem;
+}

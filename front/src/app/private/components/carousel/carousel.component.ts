@@ -8,19 +8,20 @@ import {CarouselItem} from '../../../shared/models/carousel-item';
 })
 export class CarouselComponent implements OnInit {
   baseCarouselImages = 'assets/carousel/';
+  imageExtension = '.png';
   carouselItems: CarouselItem[] = [
     {
-      image: 'work.png',
+      image: 'work',
       alt: 'Work image',
       interval: 5000
     },
     {
-      image: 'sun.jpeg',
+      image: 'sun',
       alt: 'Sun image',
       interval: 5000
     },
     {
-      image: 'cowork.jpg',
+      image: 'cowork',
       alt: 'Cowork image',
       interval: 5000
     }

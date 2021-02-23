@@ -2,7 +2,8 @@
   <div class="carousel-inner">
     <div *ngFor="let carouselItem of carouselItems;let isFirst = first" class="carousel-item active"
          [ngClass]="{active:isFirst}">
-      <img [src]="baseCarouselImages+carouselItem.image" class="carousel-img d-block w-100" [alt]="carouselItem.alt">
+      <img [src]="baseCarouselImages + carouselItem.image + imageExtension" class="carousel-img d-block w-100"
+           [alt]="carouselItem.alt">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselRiverside" data-bs-slide="prev">
