@@ -1,0 +1,110 @@
+.accommodation-container {
+  padding: 1rem;
+  background-color: #1C76B7;
+}
+
+.accommodation-page {
+  padding: 2rem 0 2rem 0;
+  background-color: #FFFFFF;
+}
+
+.banner-title {
+  font-family: "Metropolis", serif;
+  font-size: 3vw;
+  font-weight: bold;
+  color: #1C76B7;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media (max-width: 992px) {
+    text-align: center;
+  }
+}
+
+.accommodation-banner {
+  @media (max-width: 576px) {
+    margin: 0 1rem 0 1rem;
+  }
+  margin: 0 5rem 0 5rem;
+}
+
+.banner-text {
+  font-family: "DIN", serif;
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+  @media (max-width: 992px) {
+    text-align: center;
+  }
+}
+
+.banner-list {
+  font-family: "DIN", serif;
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+.card-group {
+  @media (max-width: 576px) {
+    margin: 0 1rem 0 1rem;
+  }
+  margin: 0 5rem 0 5rem;
+}
+
+.card {
+    margin: 3rem 1rem 0 1rem;
+}
+
+.card-title {
+  text-align: center;
+  font-family: "Metropolis", serif;
+  font-size: 2vw;
+  font-weight: bold;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+.card-text {
+  text-align: center;
+  font-family: "DIN", serif;
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+.card-features {
+  font-family: "DIN", serif;
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+.card-price {
+  margin-bottom: 2rem;
+}
+
+.button-container {
+  margin-bottom: 2rem;
+}
+
+.reservation-button {
+  color: #FFFFFF;
+  font-family: "Metropolis", serif;
+  font-size: 2vw;
+  font-weight: bold;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+  background-color: #1C76B7;
+  width: 12rem;
+}
+
+.previous-price {
+  text-decoration:line-through;
+}

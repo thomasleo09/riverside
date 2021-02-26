@@ -16,7 +16,10 @@
     </div>
     <div class="object-group row row-cols-1 row-cols-lg-2">
       <div class="col">
-        <img class="coworking-image" [src]="baseCoworkingImages + imageName + imageExtension" [alt]="imageName">
+        <video class="coworking-video" controls>
+          <source [src]="baseCoworkingImages + videoName" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
       <div class="col">
         <div class="accordion-title">
@@ -25,7 +28,8 @@
         <div class="accordion" id="accordionQuestions">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
                       aria-expanded="false" aria-controls="collapseOne" id="buttonOne">
                 Conectividad
               </button>
@@ -107,7 +111,7 @@
       </div>
     </div>
     <div class="coworking-footer">
-      <p>¿Aún no estás seguro de que quieres venir a trabajar en Riverside? <b>Agenda una videollamada con alguien de
+      <p>¿Aún no estás seguro de trabajar desde el paraíso? <b>Agenda una videollamada con alguien de
         nuestro equipo.</b> ¡Comienza a viajar ya!</p>
     </div>
   </div>

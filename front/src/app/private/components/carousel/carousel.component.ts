@@ -11,19 +11,16 @@ export class CarouselComponent implements OnInit {
   imageExtension = '.png';
   carouselItems: CarouselItem[] = [
     {
-      image: 'work',
-      alt: 'Work image',
-      interval: 5000
+      image: 'banner-coworking',
+      alt: 'Coworking image'
     },
     {
-      image: 'sun',
-      alt: 'Sun image',
-      interval: 5000
+      image: 'banner-accommodation',
+      alt: 'Accommodation image'
     },
     {
-      image: 'cowork',
-      alt: 'Cowork image',
-      interval: 5000
+      image: 'banner-yoga',
+      alt: 'Yoga image'
     }
   ];
 

@@ -9,6 +9,8 @@ import { CarouselComponent } from './private/components/carousel/carousel.compon
 import { IntroductionComponent } from './private/components/introduction/introduction.component';
 import { CovidComponent } from './private/components/covid/covid.component';
 import { CoworkingComponent } from './private/components/coworking/coworking.component';
+import { AccommodationComponent } from './private/components/accommodation/accommodation.component';
+import {NgxPageScrollCoreModule} from "ngx-page-scroll-core";
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { CoworkingComponent } from './private/components/coworking/coworking.com
     CarouselComponent,
     IntroductionComponent,
     CovidComponent,
-    CoworkingComponent
+    CoworkingComponent,
+    AccommodationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxPageScrollCoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

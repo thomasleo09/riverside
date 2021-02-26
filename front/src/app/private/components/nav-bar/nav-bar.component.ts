@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {NavItem} from '../../../shared/models/nav-item';
 
 @Component({
@@ -8,45 +8,45 @@ import {NavItem} from '../../../shared/models/nav-item';
 })
 export class NavBarComponent implements OnInit {
 
+  @Output() scrollEvent: EventEmitter<any> = new EventEmitter();
   navItems: NavItem[] = [
     {
       name: 'Coworking',
-      redirect: 'sdas'
+      redirect: 'coworking'
     },
     {
       name: 'Hospedaje',
-      redirect: 'sdas'
+      redirect: 'accommodation'
     },
-    {
-      name: 'Alimentación',
-      redirect: 'sdas'
-    },
-    {
-      name: 'Yoga Studio',
-      redirect: 'sdas'
-    },
-    {
-      name: 'Huerta',
-      redirect: 'sdas'
-    },
-    {
-      name: 'Comunidad',
-      redirect: 'sdas'
-    },
-    {
-      name: 'Eventos',
-      redirect: 'sdas'
-    },
-    {
-      name: 'Nosotros',
-      redirect: 'sdas'
-    },
-    {
-      name: 'Contacto',
-      redirect: 'sdas'
-    }
+    // {
+    //   name: 'Alimentación',
+    //   redirect: 'sdas'
+    // },
+    // {
+    //   name: 'Yoga Studio',
+    //   redirect: 'sdas'
+    // },
+    // {
+    //   name: 'Huerta',
+    //   redirect: 'sdas'
+    // },
+    // {
+    //   name: 'Comunidad',
+    //   redirect: 'sdas'
+    // },
+    // {
+    //   name: 'Eventos',
+    //   redirect: 'sdas'
+    // },
+    // {
+    //   name: 'Nosotros',
+    //   redirect: 'sdas'
+    // },
+    // {
+    //   name: 'Contacto',
+    //   redirect: 'sdas'
+    // }
   ];
-
 
   constructor() {
   }
@@ -54,4 +54,7 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scrollTo(redirectComponent: string ): void {
+    this.scrollEvent.emit(redirectComponent);
+  }
 }

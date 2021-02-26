@@ -9,7 +9,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <div class="nav nav-fill nav-items">
-        <a *ngFor="let navItem of navItems" class="nav-link" [href]="navItem.redirect">{{navItem.name}}</a>
+        <a *ngFor="let navItem of navItems" class="nav-link" (click)="scrollTo(navItem.redirect)">{{navItem.name}}</a>
       </div>
     </div>
   </div>

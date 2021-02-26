@@ -10,6 +10,7 @@ export class CoworkingComponent implements OnInit {
   baseCoworkingImages = 'assets/coworking/';
   imageExtension = '.png';
   imageName = 'coworking-image';
+  videoName = 'coworking-video.mp4';
 
   constructor() { }
 
