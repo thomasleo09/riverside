@@ -1,0 +1,70 @@
+<div class="yoga-container">
+  <div class="yoga-page">
+    <div class="yoga-banner">
+      <p class="banner-title">Yoga</p>
+      <div class="row row-cols-1 row-cols-lg-2">
+        <div class="col">
+          <img class="yoga-image" [src]="baseYogaImages + yogaImage + imageExtension" [alt]="yogaImage">
+          <div class="text-image">Yoga</div>
+        </div>
+        <div class="col">
+          <p class="banner-text">Venir a Riverside es una oportunidad de restablecer el <b>equilibrio</b> en medio de la
+            naturaleza. ¿Buscas nutrir tu espíritu y tu cuerpo? El río y las imponentes montañas de los Andes
+            colombianos forman un espacio ideal para trabajar en tu salud tanto <b>física como mental. Invierte en
+              ti</b>, en tu salud y experiencias conscientes.</p>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-2">
+        <div class="col">
+          <p class="banner-text">Tenemos <b>profesores expertos</b> enseñando varios estilos de yoga (hatha, vinyasa
+            flow, kundalini) tanto como meditaciones guiadas.</p>
+        </div>
+        <div class="col">
+          <img class="yoga-image" [src]="baseYogaImages + meditationImage + imageExtension" [alt]="meditationImage">
+          <div class="text-image">Meditación</div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-2">
+        <div class="col">
+          <img class="yoga-image" [src]="baseYogaImages + ayurvedaImage + imageExtension" [alt]="ayurvedaImage">
+          <div class="text-image">Ayurveda</div>
+        </div>
+        <div class="col">
+          <p class="banner-text">Sabemos que el estilo de vida yogui no termina cuando se acaba la práctica, así que
+            también te asesoramos sobre la <b>alimentación ayurvédica</b> y organizamos <b>excursiones en la
+              naturaleza.</b></p>
+        </div>
+      </div>
+      <p class="yoga-text">Para participar en nuestras actividades de bienestar, no es necesaria la experiencia previa. Nuestros
+        profesores expertos te guiarán con un trato personalizado.</p>
+      <p class="table-title"><b>Invierte en ti con los siguientes planes:</b></p>
+      <table class="table">
+        <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col"><b>Precio especial Covid-19</b></th>
+          <th scope="col"><b>Precio normal</b></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row"><b>1 Sesión</b></th>
+          <td>{{25000 | currency : 'USD' : 'symbol' : '1.0-0'}}</td>
+          <td class="normal-price">{{35000 | currency : 'USD' : 'symbol' : '1.0-0'}}</td>
+        </tr>
+        <tr>
+          <th scope="row"><b>4 Sesiones</b></th>
+          <td>{{100000 | currency : 'USD' : 'symbol' : '1.0-0'}}</td>
+          <td class="normal-price">{{120000 | currency : 'USD' : 'symbol' : '1.0-0'}}</td>
+        </tr>
+        <tr>
+          <th scope="row"><b>12 sesiones o más</b></th>
+          <td>{{300000 | currency : 'USD' : 'symbol' : '1.0-0'}}</td>
+          <td class="normal-price">{{336000 | currency : 'USD' : 'symbol' : '1.0-0'}}</td>
+        </tr>
+        </tbody>
+      </table>
+      <p class="yoga-text">* Pregunta por nuestros planes grupales o corpoprativos</p>
+    </div>
+  </div>
+</div>

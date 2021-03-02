@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {AccommodationItem} from '../../../shared/models/accommodation-item';
+import {SharedConstants} from "../../../shared/constants/shared-constants";
 
 @Component({
   selector: 'app-accommodation',
@@ -41,7 +42,7 @@ export class AccommodationComponent implements OnInit {
     },
     {
       image: 'bedroom',
-      name: 'Dormitorio compartido',
+      name: 'Dormitorios',
       features: [
         'Opción de dormitorio con 4, 5, o 6 camas',
         'Cama sencilla',
@@ -63,6 +64,6 @@ export class AccommodationComponent implements OnInit {
   }
 
   clickBook(): void {
-    window.location.href = 'https://new-booking.frontdeskmaster.com?hostelId=XEqD8Vc%2FR1T5uwzpKZjYovxuAAGC5YYK';
+    window.location.href = SharedConstants.bookingUrl;
   }
 }

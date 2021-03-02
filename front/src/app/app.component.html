@@ -4,5 +4,25 @@
 <app-covid id="covid"></app-covid>
 <app-coworking id="coworking"></app-coworking>
 <app-accommodation id="accommodation"></app-accommodation>
-
-
+<app-feeding id="feeding"></app-feeding>
+<app-yoga id="yoga"></app-yoga>
+<app-garden id="garden"></app-garden>
+<app-contact id="contact"></app-contact>
+<button type="button" class="button-reservation" (click)="clickBook()">Haz tu reserva</button>
+<div class="social-bar">
+  <a [href]="whatsappUrl">
+    <img class="icon" [src]="baseSocialBarImages + whatsappImage + imageExtension" [alt]="whatsappImage">
+  </a>
+  <a [href]="instagramUrl">
+    <img class="icon" [src]="baseSocialBarImages + instagramImage + imageExtension" [alt]="instagramImage">
+  </a>
+  <a [href]="facebookUrl">
+    <img class="icon" [src]="baseSocialBarImages + facebookImage + imageExtension" [alt]="facebookImage">
+  </a>
+  <a [href]="linkedlnUrl">
+    <img class="icon" [src]="baseSocialBarImages + linkedlnImage + imageExtension" [alt]="linkedlnImage">
+  </a>
+  <a [href]="mapUrl">
+    <img class="icon" [src]="baseSocialBarImages + mapImage + imageExtension" [alt]="mapImage">
+  </a>
+</div>

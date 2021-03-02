@@ -11,6 +11,10 @@ import { CovidComponent } from './private/components/covid/covid.component';
 import { CoworkingComponent } from './private/components/coworking/coworking.component';
 import { AccommodationComponent } from './private/components/accommodation/accommodation.component';
 import {NgxPageScrollCoreModule} from "ngx-page-scroll-core";
+import { FeedingComponent } from './private/components/feeding/feeding.component';
+import { YogaComponent } from './private/components/yoga/yoga.component';
+import { GardenComponent } from './private/components/garden/garden.component';
+import { ContactComponent } from './private/components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import {NgxPageScrollCoreModule} from "ngx-page-scroll-core";
     IntroductionComponent,
     CovidComponent,
     CoworkingComponent,
-    AccommodationComponent
+    AccommodationComponent,
+    FeedingComponent,
+    YogaComponent,
+    GardenComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

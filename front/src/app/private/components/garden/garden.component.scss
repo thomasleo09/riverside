@@ -1,0 +1,53 @@
+.garden-container {
+  padding: 1rem;
+  background-color: #009447;
+}
+
+.garden-page {
+  padding: 2rem 0 2rem 0;
+  background-color: #FFFFFF;
+}
+
+.garden-banner {
+  @media (max-width: 576px) {
+    margin: 0 1rem 3rem 1rem;
+  }
+  margin: 0 5rem 3rem 5rem;
+}
+
+.banner-title {
+  font-family: "Metropolis", serif;
+  font-size: 3vw;
+  font-weight: bold;
+  color: #009447;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  text-align: center;
+}
+
+.banner-text {
+  font-family: "DIN", serif;
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+.garden-video {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.garden-list {
+  margin-top: 2rem;
+  font-family: "DIN", serif;
+  font-size: 3vw;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media (min-width: 768px) {
+    padding: 0 20% 0 20%;
+  }
+}

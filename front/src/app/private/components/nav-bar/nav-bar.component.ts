@@ -15,21 +15,21 @@ export class NavBarComponent implements OnInit {
       redirect: 'coworking'
     },
     {
-      name: 'Hospedaje',
+      name: 'Alojamiento',
       redirect: 'accommodation'
     },
-    // {
-    //   name: 'Alimentación',
-    //   redirect: 'sdas'
-    // },
-    // {
-    //   name: 'Yoga Studio',
-    //   redirect: 'sdas'
-    // },
-    // {
-    //   name: 'Huerta',
-    //   redirect: 'sdas'
-    // },
+    {
+      name: 'Alimentación',
+      redirect: 'feeding'
+    },
+    {
+      name: 'Yoga Studio',
+      redirect: 'yoga'
+    },
+    {
+      name: 'Huerta',
+      redirect: 'garden'
+    },
     // {
     //   name: 'Comunidad',
     //   redirect: 'sdas'
@@ -42,10 +42,10 @@ export class NavBarComponent implements OnInit {
     //   name: 'Nosotros',
     //   redirect: 'sdas'
     // },
-    // {
-    //   name: 'Contacto',
-    //   redirect: 'sdas'
-    // }
+    {
+      name: 'Contacto',
+      redirect: 'contact'
+    }
   ];
 
   constructor() {

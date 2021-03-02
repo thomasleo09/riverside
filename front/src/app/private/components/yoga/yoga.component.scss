@@ -1,0 +1,92 @@
+.yoga-container {
+  padding: 1rem;
+  background-color: #1C76B7;
+}
+
+.yoga-page {
+  padding: 2rem 0 2rem 0;
+  background-color: #FFFFFF;
+}
+
+.yoga-banner {
+  @media (max-width: 576px) {
+    margin: 0 1rem 3rem 1rem;
+  }
+  margin: 0 5rem 3rem 5rem;
+}
+
+.banner-title {
+  font-family: "Metropolis", serif;
+  font-size: 3vw;
+  font-weight: bold;
+  color: #1C76B7;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media (max-width: 992px) {
+    text-align: center;
+  }
+  text-align: right;
+}
+
+.banner-text {
+  font-family: "DIN", serif;
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+.yoga-image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 20rem;
+}
+
+.row {
+  margin-bottom: 2rem;
+}
+
+.yoga-text {
+  font-family: "DIN", serif;
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+  text-align: center;
+}
+
+.table-title {
+  font-family: "DIN", serif;
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.table {
+  font-family: "DIN", serif;
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+  @media (min-width: 768px) {
+    width: 50%;
+    margin: 0 25% 0 25%;
+  }
+}
+
+.text-image {
+  font-family: "Metropolis", serif;
+  font-size: 3vw;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  color: #FFFFFF;
+}
