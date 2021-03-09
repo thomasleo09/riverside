@@ -64,6 +64,6 @@ export class AccommodationComponent implements OnInit {
   }
 
   clickBook(): void {
-    window.location.href = SharedConstants.bookingUrl;
+    window.open(SharedConstants.bookingUrl, '_blank');
   }
 }
