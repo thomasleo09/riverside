@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {CarouselItem} from '../../../shared/models/carousel-item';
 
 @Component({
@@ -11,16 +11,22 @@ export class CarouselComponent implements OnInit {
   imageExtension = '.png';
   carouselItems: CarouselItem[] = [
     {
-      image: 'banner-coworking',
-      alt: 'Coworking image'
+      image: 'coworking-desktop',
+      alt: 'Coworking image',
+      title: 'Coworking',
+      subtitle: 'Trabaja desde el paraíso, disfruta y vive más'
     },
     {
-      image: 'banner-accommodation',
-      alt: 'Accommodation image'
+      image: 'accommodation-desktop',
+      alt: 'Accommodation image',
+      title: 'Hospedaje',
+      subtitle: 'Descansa profundamente en nuestras acogedoras habitaciones'
     },
     {
-      image: 'banner-yoga',
-      alt: 'Yoga image'
+      image: 'feeding-desktop',
+      alt: 'Feeding image',
+      title: 'Alimentación',
+      subtitle: 'Mientras trabajas y disfrutas, nos encargamos de tu alimentación'
     }
   ];
 
@@ -28,6 +34,7 @@ export class CarouselComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
   }
 
 }

@@ -8,11 +8,41 @@
 }
 
 .carousel-img {
-  height: 85vh;
+  height: 100vh;
+  object-fit: cover;
 }
 
 i {
-  margin-top: 75%;
+  margin-top: 20%;
   font-size: 3rem;
+  color: #FFFFFF;
+}
+
+.image-title {
+  text-shadow: 4px 3px 2px black;
+  font-family: "Metropolis", serif;
+  font-weight: bold;
+  font-size: 3vw;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  color: #FFFFFF;
+}
+
+.image-subtitle {
+  line-height : 1;
+  text-shadow: 4px 3px 2px black;
+  margin-right: 40%;
+  font-family: "DIN", serif;
+  font-size: 3vw;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  position: absolute;
+  top: 80%;
+  left: 5%;
   color: #FFFFFF;
 }

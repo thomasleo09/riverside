@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {CarouselItem} from "../../../shared/models/carousel-item";
+import {CarouselCommunityItem} from "../../../shared/models/carousel-community-item";
 
 @Component({
   selector: 'app-community',
@@ -17,7 +18,7 @@ export class CommunityComponent implements OnInit {
   imageSixName = 'community-six';
   imageExtension = '.png';
 
-  carouselItems: CarouselItem[] = [
+  carouselItems: CarouselCommunityItem[] = [
     {
       image: 'community-one',
       alt: 'community-one'
@@ -32,7 +33,7 @@ export class CommunityComponent implements OnInit {
     }
   ];
 
-  carouselItemsTwo: CarouselItem[] = [
+  carouselItemsTwo: CarouselCommunityItem[] = [
     {
       image: 'community-four',
       alt: 'community-four'

@@ -4,6 +4,8 @@
          [ngClass]="{active:isFirst}">
       <img [src]="baseCarouselImages + carouselItem.image + imageExtension" class="carousel-img d-block w-100"
            [alt]="carouselItem.alt">
+      <div class="image-title">{{carouselItem.title}}</div>
+      <div class="image-subtitle">{{carouselItem.subtitle}}</div>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselRiverside" data-bs-slide="prev">
