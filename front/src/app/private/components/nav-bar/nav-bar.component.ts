@@ -30,18 +30,18 @@ export class NavBarComponent implements OnInit {
       name: 'Huerta',
       redirect: 'garden'
     },
-    // {
-    //   name: 'Comunidad',
-    //   redirect: 'sdas'
-    // },
-    // {
-    //   name: 'Eventos',
-    //   redirect: 'sdas'
-    // },
-    // {
-    //   name: 'Nosotros',
-    //   redirect: 'sdas'
-    // },
+    {
+      name: 'Comunidad',
+      redirect: 'community'
+    },
+    {
+      name: 'Eventos',
+      redirect: 'events'
+    },
+    {
+      name: 'Nosotros',
+      redirect: 'about-us'
+    },
     {
       name: 'Contacto',
       redirect: 'contact'

@@ -15,6 +15,11 @@ import { FeedingComponent } from './private/components/feeding/feeding.component
 import { YogaComponent } from './private/components/yoga/yoga.component';
 import { GardenComponent } from './private/components/garden/garden.component';
 import { ContactComponent } from './private/components/contact/contact.component';
+import { CommunityComponent } from './private/components/community/community.component';
+import { EventsComponent } from './private/components/events/events.component';
+import { AboutUsComponent } from './private/components/about-us/about-us.component';
+import { OurClientsComponent } from './private/components/our-clients/our-clients.component';
+import { LocationComponent } from './private/components/location/location.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +34,12 @@ import { ContactComponent } from './private/components/contact/contact.component
     FeedingComponent,
     YogaComponent,
     GardenComponent,
-    ContactComponent
+    ContactComponent,
+    CommunityComponent,
+    EventsComponent,
+    AboutUsComponent,
+    OurClientsComponent,
+    LocationComponent
   ],
   imports: [
     BrowserModule,

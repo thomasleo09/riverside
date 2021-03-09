@@ -1,0 +1,66 @@
+<div class="community-container">
+  <div class="community-page">
+    <div class="community-banner">
+      <p class="banner-title">Trabaja y vive en comunidad</p>
+      <div class="community-row row row-cols-1 row-cols-lg-2">
+        <div class="carousel-col col">
+          <div id="carouselCommunity" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div *ngFor="let carouselItem of carouselItems;let isFirst = first" class="carousel-item active"
+                   [ngClass]="{active:isFirst}">
+                <img [src]="baseCommunityImages + carouselItem.image + imageExtension" class="carousel-img d-block w-100"
+                     [alt]="carouselItem.alt">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCommunity" data-bs-slide="prev">
+              <i class="bi-chevron-left"></i>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCommunity" data-bs-slide="next">
+              <i class="bi-chevron-right"></i>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <p class="banner-text">En Riverside somos una <b>comunidad de nómadas digitales, viajeros, y amantes de la
+            naturaleza</b> que convive y trabaja en nuestros hermosos espacios. Con nosotros, encontrarás personas con
+            estilos de vida similares al tuyo y la oportunidad de <b>aprender de los talentos</b> de cada uno. <b>Viajar
+              y conocer nuevas personas</b> es la mejor forma de <b>aprender</b> y expandir tu <b>creatividad</b>. Así
+            se generan amistades y redes de negocio al mismo tiempo. Nuestra misión es crear una comunidad próspera de
+            <b>coworkers conscientes</b> que creen en un equilibrio entre el trabajo y el ocio, la productividad y la
+            sostenibilidad. </p>
+        </div>
+      </div>
+      <div class="community-row row row-cols-1 row-cols-lg-2">
+        <div class="col">
+          <p class="banner-text">Dentro de nuestra propiedad contamos con más de 6 charcos en el hermoso <b>Río
+            Piedras</b>. Ofrecemos una zona de hamacas, una cocina común, amplios espacios comunes para comer y
+            relajarse, una bañera de agua caliente, y el co-working con sus cómodos espacios de trabajo (mesas
+            compartidas, cabinas privadas, salas de reuniones y conferencias). Nuestro amable staff siempre está listo
+            para prender una fogata y servirte un delicioso café de origen, aromáticas frescas de la huerta, cervezas y
+            vino, platos de alta cocina, postres y snacks.</p>
+        </div>
+        <div class="carousel-col col">
+          <div id="carouselCommunityTwo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div *ngFor="let carouselItem of carouselItemsTwo;let isFirst = first" class="carousel-item active"
+                   [ngClass]="{active:isFirst}">
+                <img [src]="baseCommunityImages + carouselItem.image + imageExtension" class="carousel-img d-block w-100"
+                     [alt]="carouselItem.alt">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCommunityTwo" data-bs-slide="prev">
+              <i class="bi-chevron-left"></i>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCommunityTwo" data-bs-slide="next">
+              <i class="bi-chevron-right"></i>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

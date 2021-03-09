@@ -1,0 +1,94 @@
+.our-clients-container {
+  padding: 1rem;
+  background-color: #009447;
+}
+
+.our-clients-page {
+  padding: 2rem 0 2rem 0;
+  background-color: #FFFFFF;
+}
+
+.our-clients-banner {
+  @media (max-width: 576px) {
+    margin: 0 1rem 3rem 1rem;
+  }
+  margin: 0 5rem 3rem 5rem;
+}
+
+.banner-title {
+  @media (min-width: 992px) {
+    text-align: left;
+  }
+  text-align: center;
+  font-family: "Metropolis", serif;
+  font-size: 3vw;
+  font-weight: bold;
+  color: #009447;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.banner-text {
+  font-family: "DIN", serif;
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+.our-clients-image {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#carouselOurClients {
+  width: 100%;
+}
+
+.carousel-item {
+  background-color: #009447;
+  display: block;
+  width: 100%;
+}
+
+i {
+  margin-top: 50%;
+  font-size: 3rem;
+  color: #FFFFFF;
+}
+
+.carousel-row {
+  @media (min-width: 992px) {
+    padding: 4rem;
+  }
+  padding: 1rem;
+}
+
+.carousel-text {
+  color: #FFFFFF;
+  font-family: "DIN", serif;
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+.image-text {
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "DIN", serif;
+  font-size: 1vw;
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+}
+
+.carousel-col {
+  display: flex;
+  align-items: center;
+}
+
+

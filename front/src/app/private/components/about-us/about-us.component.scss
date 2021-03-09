@@ -1,0 +1,66 @@
+.about-us-container {
+  padding: 1rem;
+  background-color: #1C76B7;
+}
+
+.about-us-page {
+  padding: 2rem 0 2rem 0;
+  background-color: #FFFFFF;
+}
+
+.about-us-banner {
+  @media (max-width: 576px) {
+    margin: 0 1rem 3rem 1rem;
+  }
+  margin: 0 5rem 3rem 5rem;
+}
+
+.banner-title {
+  font-family: "Metropolis", serif;
+  font-size: 3vw;
+  font-weight: bold;
+  color: #1C76B7;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  text-align: center;
+}
+
+.banner-text {
+  font-family: "DIN", serif;
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+.about-us-image {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.about-us-row {
+  margin-top: 3rem;
+}
+
+.banner-subtitle-right {
+  text-align: right;
+  color: #1C76B7;
+  font-family: "DIN", serif;
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+.banner-subtitle-left {
+  text-align: left;
+  color: #1C76B7;
+  font-family: "DIN", serif;
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}

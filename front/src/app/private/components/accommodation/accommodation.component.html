@@ -2,7 +2,7 @@
   <div class="accommodation-page">
     <div class="accommodation-banner row row-cols-1 row-cols-lg-2">
       <div class="col">
-        <p class="banner-title">Acomodación</p>
+        <p class="banner-title">Alojamiento</p>
         <p class="banner-text">Descubre nuestras 3 opciones de acomodación. </p>
         <p class="banner-text">Todas nuestras habitaciones han sido diseñadas con mucho amor y con el mayor detalle.
           <b>¡Las camas cómodas y el diseño auténtico te harán sentir en casa!</b></p>
@@ -18,43 +18,47 @@
         </ul>
       </div>
     </div>
-    <div class="card-group row-cols-1 row-cols-lg-3">
-      <div *ngFor="let accommodationItem of accommodationItems" class="card col">
-        <img [src]="baseIntroductionImages + accommodationItem.image + imageExtension" class="card-img-top"
-             [alt]="accommodationItem.image">
-        <div class="card-body">
-          <p class="card-title">{{accommodationItem.name}}</p>
-          <ul class="card-features">
-            <li *ngFor="let feature of accommodationItem.features">{{feature}}</li>
-          </ul>
-        </div>
-        <div class="card-footer">
-          <p class="card-title">Precio normal</p>
-          <div class="row card-price">
-            <div class="col">
-              <p class="card-text previous-price">{{accommodationItem.normalWeeklyPrice | currency : 'USD' : 'symbol' : '1.0-0'}}</p>
-              <p class="card-text">Semana</p>
+    <div class="cards-group row row-cols-1 row-cols-lg-3">
+      <div *ngFor="let accommodationItem of accommodationItems" class="card-item col">
+        <div class="card h-100">
+          <img [src]="baseIntroductionImages + accommodationItem.image + imageExtension" class="card-img-top"
+               [alt]="accommodationItem.image">
+          <div class="card-body">
+            <p class="card-title">{{accommodationItem.name}}</p>
+            <ul class="card-features">
+              <li *ngFor="let feature of accommodationItem.features">{{feature}}</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <p class="card-title">Precio normal</p>
+            <div class="row card-price">
+              <div class="col">
+                <p
+                  class="card-text previous-price">{{accommodationItem.normalWeeklyPrice | currency : 'USD' : 'symbol' : '1.0-0'}}</p>
+                <p class="card-text">Semana</p>
+              </div>
+              <div class="col">
+                <p
+                  class="card-text previous-price">{{accommodationItem.normalMonthlyPrice | currency : 'USD' : 'symbol' : '1.0-0'}}</p>
+                <p class="card-text">Mes</p>
+              </div>
             </div>
-            <div class="col">
-              <p class="card-text previous-price">{{accommodationItem.normalMonthlyPrice | currency : 'USD' : 'symbol' : '1.0-0'}}</p>
-              <p class="card-text">Mes</p>
+            <p class="card-title">Precio especial</p>
+            <p class="card-title">Covid - 19</p>
+            <div class="row card-price">
+              <div class="col">
+                <p class="card-text">{{accommodationItem.covidWeeklyPrice | currency : 'USD' : 'symbol' : '1.0-0'}}</p>
+                <p class="card-text">Semana</p>
+              </div>
+              <div class="col">
+                <p class="card-text">{{accommodationItem.covidMonthlyPrice | currency : 'USD' : 'symbol' : '1.0-0'}}</p>
+                <p class="card-text">Mes</p>
+              </div>
             </div>
           </div>
-          <p class="card-title">Precio especial</p>
-          <p class="card-title">Covid-19</p>
-          <div class="row card-price">
-            <div class="col">
-              <p class="card-text">{{accommodationItem.covidWeeklyPrice | currency : 'USD' : 'symbol' : '1.0-0'}}</p>
-              <p class="card-text">Semana</p>
-            </div>
-            <div class="col">
-              <p class="card-text">{{accommodationItem.covidMonthlyPrice | currency : 'USD' : 'symbol' : '1.0-0'}}</p>
-              <p class="card-text">Mes</p>
-            </div>
+          <div class="button-container mx-auto">
+            <button type="button" (click)="clickBook()" class="btn reservation-button">Reservar</button>
           </div>
-        </div>
-        <div class="button-container mx-auto">
-          <button type="button" (click)="clickBook()" class="btn reservation-button">Reservar</button>
         </div>
       </div>
     </div>

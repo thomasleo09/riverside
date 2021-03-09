@@ -31,7 +31,7 @@ export class AccommodationComponent implements OnInit {
       name: 'Estudio privado',
       features: [
         'Cama tamaño Queen plegable',
-        'Baño compartido para los 4 estudios',
+        'Baño compartido sólo para estudios',
         'Escritorio y silla de trabajo',
         'Vista panorámica'
       ],

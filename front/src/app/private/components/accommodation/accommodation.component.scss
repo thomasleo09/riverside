@@ -47,7 +47,7 @@
   }
 }
 
-.card-group {
+.cards-group {
   @media (max-width: 576px) {
     margin: 0 1rem 0 1rem;
   }
@@ -58,8 +58,13 @@
   background-color: #FFFFFF;
 }
 
+.card-item {
+  margin-bottom: 3rem;
+}
+
 .card {
-    margin: 3rem 1rem 0 1rem;
+  margin: 3rem .1rem 0 .1rem;
+  border: 2px solid black;
 }
 
 .card-title {
@@ -110,5 +115,5 @@
 }
 
 .previous-price {
-  text-decoration:line-through;
+  text-decoration: line-through #E256AF;
 }

@@ -1,0 +1,50 @@
+<div class="our-clients-container">
+  <div class="our-clients-page">
+    <div class="our-clients-banner row row-cols-1 row-cols-lg-2">
+      <div class="col">
+        <p class="banner-title">Nuestros clientes</p>
+        <p class="banner-text">Riverside está diseñado para <b>estancias de larga duración</b>. Personas que quieran
+          venir a disfrutar el entorno, conocer la <b>cultura local</b> y al mismo tiempo <b>trabajar
+            productivamente</b>. <b>Nómadas digitales</b>, amantes de la naturaleza, gente mente abierta que buscan
+          invertir en <b>experiencias</b> en una vez de cosas.</p>
+        <p class="banner-text">En seguida te <b>compartimos las experiencias de algunas personas</b> que ya hicieron
+          parte de nuestra comunidad.
+        </p>
+      </div>
+      <div class="col">
+        <img class="our-clients-image" [src]="baseOurClientsImages + imageOneName + imageExtension"
+             [alt]="imageOneName">
+      </div>
+    </div>
+    <div class="our-clients-banner">
+      <div id="carouselOurClients" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div *ngFor="let carouselItem of carouselItems;let isFirst = first" class="carousel-item active"
+               data-bs-interval="5000" [ngClass]="{active:isFirst}">
+            <div class="carousel-row row row-cols-2">
+              <div class="col">
+                <img [src]="baseOurClientsImages + carouselItem.image + imageExtension"
+                     class="carousel-img d-block w-100"
+                     [alt]="carouselItem.image">
+                <p class="image-text"><b>{{carouselItem.imageText}}</b></p>
+                <p class="image-text">{{carouselItem.imageSubText}}</p>
+              </div>
+              <div class="carousel-col col">
+                <p class="carousel-text"><em>{{carouselItem.text}}</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselOurClients" data-bs-slide="prev">
+          <i class="bi-chevron-left"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselOurClients" data-bs-slide="next">
+          <i class="bi-chevron-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
