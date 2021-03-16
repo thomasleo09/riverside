@@ -71,3 +71,10 @@ i {
 .carousel-col {
   margin-bottom: 3rem;
 }
+
+.inverse-row {
+  @media (max-width: 992px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

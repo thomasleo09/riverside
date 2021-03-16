@@ -85,10 +85,10 @@
   @media (max-width: 768px) {
     font-size: 20px;
   }
-  text-shadow: 4px 3px 2px black;
+  text-shadow: 0 3px 6px black;
   position: absolute;
-  top: 70%;
-  left: 5%;
+  top: 80%;
+  left: 10%;
   color: #FFFFFF;
 }
 
@@ -102,4 +102,11 @@ td {
 
 .normal-price {
   text-decoration: line-through #E256AF;
+}
+
+.meditation-row {
+  @media (max-width: 992px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

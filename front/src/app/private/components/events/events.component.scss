@@ -42,7 +42,14 @@
   font-family: "DIN", serif;
   font-size: 2vw;
   @media (max-width: 768px) {
+    text-align: center;
     font-size: 15px;
+  }
+}
+
+.feeding-list {
+  @media (max-width: 768px) {
+    list-style: none;
   }
 }
 

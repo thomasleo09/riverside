@@ -26,6 +26,17 @@
   }
 }
 
+.carousel-title {
+  text-align: center;
+  font-family: "Metropolis", serif;
+  font-size: 3vw;
+  font-weight: bold;
+  color: #FFFFFF;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
 .banner-text {
   font-family: "DIN", serif;
   font-size: 2vw;
@@ -59,12 +70,28 @@ i {
 
 .carousel-row {
   @media (min-width: 992px) {
-    padding: 4rem;
+    padding: 1rem 7rem 1rem 7rem;
   }
-  padding: 1rem;
+  padding: 1rem 4rem 1rem 4rem;
 }
 
 .carousel-text {
+  text-align: center;
+  line-height : 1;
+  color: #FFFFFF;
+  font-family: "DIN", serif;
+  font-size: 2vw;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+  @media (max-width: 992px) {
+    text-align: center;
+  }
+}
+
+.image-text {
+  margin: 0;
+  text-align: center;
   color: #FFFFFF;
   font-family: "DIN", serif;
   font-size: 2vw;
@@ -73,19 +100,5 @@ i {
   }
 }
 
-.image-text {
-  text-align: center;
-  color: #FFFFFF;
-  font-family: "DIN", serif;
-  font-size: 1vw;
-  @media (max-width: 768px) {
-    font-size: 10px;
-  }
-}
-
-.carousel-col {
-  display: flex;
-  align-items: center;
-}
 
 

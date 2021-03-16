@@ -13,7 +13,9 @@
 <app-our-clients></app-our-clients>
 <app-location></app-location>
 <app-contact id="contact"></app-contact>
-<button type="button" class="button-reservation" (click)="clickBook()">Haz tu reserva</button>
+<button type="button" class="button-reservation" (click)="clickBook()">
+  <p class="button-text">Haz tu reserva</p>
+</button>
 <div class="social-bar">
   <a [href]="whatsappUrl" target="_blank">
     <img class="icon" [src]="baseSocialBarImages + whatsappImage + imageExtension" [alt]="whatsappImage">

@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class LocationComponent implements OnInit {
 
   baseLocationImages = 'assets/location/';
-  imageOneName = 'location-one';
+  imageOneName = 'location';
+  imageMobileName = 'location-mobile';
   imageExtension = '.png';
 
   constructor() { }

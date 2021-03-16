@@ -15,7 +15,7 @@
         <div class="carousel-inner">
           <div *ngFor="let carouselItem of carouselItems;let isFirst = first" class="carousel-item active"
                data-bs-interval="5000" [ngClass]="{active:isFirst}">
-            <div class="carousel-row row row-cols-2">
+            <div class="carousel-row row row-cols-1 row-cols-lg-2">
               <div class="col">
                 <img [src]="baseOurClientsImages + carouselItem.image + imageExtension"
                      class="carousel-img d-block w-100"
@@ -23,7 +23,8 @@
                 <p class="image-text"><b>{{carouselItem.imageText}}</b></p>
                 <p class="image-text">{{carouselItem.imageSubText}}</p>
               </div>
-              <div class="carousel-col col">
+              <div class="col">
+                <p class="carousel-title">Lo que dicen nuestros invitados</p>
                 <p class="carousel-text"><em>{{carouselItem.text}}</em></p>
               </div>
             </div>

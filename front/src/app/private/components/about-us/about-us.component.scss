@@ -39,6 +39,9 @@
   object-fit: cover;
   height: 100%;
   width: 100%;
+  @media (max-width: 992px) {
+    max-height: 280px;
+  }
 }
 
 .about-us-row {
@@ -62,5 +65,18 @@
   font-size: 2vw;
   @media (max-width: 768px) {
     font-size: 15px;
+  }
+}
+
+.right-text {
+  @media (min-width: 992px) {
+    text-align: right;
+  }
+}
+
+.reverse-row {
+  @media (max-width: 992px) {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }

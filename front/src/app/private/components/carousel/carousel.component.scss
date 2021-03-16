@@ -34,15 +34,20 @@ i {
 
 .image-subtitle {
   line-height : 1;
-  text-shadow: 4px 3px 2px black;
-  margin-right: 40%;
+  text-shadow: 1px 3px 2px black;
+  margin-right: 50%;
   font-family: "DIN", serif;
   font-size: 3vw;
-  @media (max-width: 768px) {
-    font-size: 20px;
-  }
   position: absolute;
   top: 80%;
   left: 5%;
   color: #FFFFFF;
+  @media (max-width: 768px) {
+    font-size: 20px;
+    top: 75%;
+    left: 5%;
+  }
+  @media (max-width: 576px) {
+    font-size: 15px;
+  }
 }

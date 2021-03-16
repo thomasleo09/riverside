@@ -1,5 +1,6 @@
 export interface CarouselItem {
-  image: string;
+  imageDesktop: string;
+  imageMobile: string;
   alt: string;
   title: string;
   subtitle: string;

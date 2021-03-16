@@ -1,6 +1,9 @@
 .contact-container {
   padding: 1rem;
   background-image: url("/assets/contact/contact-background.png");
+  @media (max-width: 768px) {
+    background-image: url("/assets/contact/contact-background-mobile.png");
+  }
 }
 
 .contact-page {

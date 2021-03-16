@@ -76,10 +76,17 @@
   }
 }
 
-.accordion {
-  @media (min-width: 768px) {
-    margin: 0 25% 0 25%;
+.location-text {
+  @media (min-width: 992px) {
+    text-align: right;
   }
+}
+
+.map-pin {
+  margin-top: 1rem;
+  height: 100%;
+  width: 100%;
+  min-height: 350px;
 }
 
 #buttonOne {
