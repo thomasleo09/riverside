@@ -4,9 +4,13 @@
   width: 100%;
 }
 
-.button-reservation {
-  min-width: 10rem;
+.button-reservation:hover {
   border: 2px solid #FFFFFF;
+}
+
+.button-reservation {
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.7);
+  min-width: 10rem;
   border-radius: 24px;
   background-color: #1C76B7;
   color: #FFFFFF;
@@ -58,5 +62,13 @@
 }
 
 .icon {
+  @media (max-width: 768px) {
+    opacity: 1;
+  }
+  opacity: 0.5;
   width: 4rem;
+}
+
+.icon:hover {
+  opacity: 1;
 }
