@@ -110,3 +110,10 @@ td {
     flex-direction: column-reverse;
   }
 }
+
+.banner-right {
+  text-align: left;
+  @media (min-width: 992px) {
+    text-align: right;
+  }
+}
