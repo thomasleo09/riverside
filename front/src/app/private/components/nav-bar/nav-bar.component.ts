@@ -43,6 +43,10 @@ export class NavBarComponent implements OnInit {
       redirect: 'about-us'
     },
     {
+      name: 'Ubicación',
+      redirect: 'location'
+    },
+    {
       name: 'Contacto',
       redirect: 'contact'
     }
