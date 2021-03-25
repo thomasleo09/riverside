@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {SharedConstants} from './shared/constants/shared-constants';
 import {NavigationEnd, Router} from '@angular/router';
+import {GoogleAnalyticsService} from './shared/services/google-analytics.service';
 
 declare let gtag: Function;
 
@@ -25,7 +26,7 @@ export class AppComponent {
   mapUrl = 'https://g.page/RiversideEcoliving?share';
   imageExtension = '.png';
 
-  constructor(public router: Router) {
+  constructor(public router: Router, public googleAnalyticsService: GoogleAnalyticsService) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         gtag('config', 'G-4TSS3Y3JBK',
@@ -46,6 +47,9 @@ export class AppComponent {
   }
 
   clickBook(): void {
+    this
+      .googleAnalyticsService
+      .eventEmitter('make_your_reservation', 'reservation', 'button', 'click', 10);
     window.open(SharedConstants.bookingUrl, '_blank');
   }
 }
