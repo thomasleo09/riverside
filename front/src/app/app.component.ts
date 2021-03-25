@@ -1,13 +1,15 @@
-import {Component, Inject} from '@angular/core';
-import {PageScrollService} from 'ngx-page-scroll-core';
-import {DOCUMENT} from '@angular/common';
-import {SharedConstants} from "./shared/constants/shared-constants";
+import {Component} from '@angular/core';
+import {SharedConstants} from './shared/constants/shared-constants';
+import {NavigationEnd, Router} from '@angular/router';
+
+declare let gtag: Function;
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
 
   baseSocialBarImages = 'assets/social-bar/';
@@ -22,6 +24,18 @@ export class AppComponent {
   mapImage = 'map';
   mapUrl = 'https://g.page/RiversideEcoliving?share';
   imageExtension = '.png';
+
+  constructor(public router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        gtag('config', 'G-4TSS3Y3JBK',
+          {
+            page_path: event.urlAfterRedirects
+          }
+        );
+      }
+    });
+  }
 
   onScroll(target: string): void {
     console.log(target);

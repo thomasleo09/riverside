@@ -20,10 +20,18 @@
         potencializan a través del encuentro.</p>
       <div class="about-us-row row row-cols-1 row-cols-lg-2">
         <div class="col">
-          <img class="about-us-image" [src]="baseAboutUsImages + imageOneName + imageExtension" [alt]="imageOneName">
+          <picture>
+            <source media="(max-width: 576px)"
+                    [srcset]="baseAboutUsImages + imageOneMobileName + imageExtension">
+            <img class="about-us-image" [src]="baseAboutUsImages + imageOneName + imageExtension" [alt]="imageOneName">
+          </picture>
         </div>
         <div class="col">
-          <img class="about-us-image" [src]="baseAboutUsImages + imageTwoName + imageExtension" [alt]="imageTwoName">
+          <picture>
+            <source media="(max-width: 576px)"
+                    [srcset]="baseAboutUsImages + imageTwoMobileName + imageExtension">
+            <img class="about-us-image" [src]="baseAboutUsImages + imageTwoName + imageExtension" [alt]="imageTwoName">
+          </picture>
         </div>
       </div>
       <div class="about-us-row reverse-row row row-cols-1 row-cols-lg-2">

@@ -9,7 +9,9 @@ export class AboutUsComponent implements OnInit {
 
   baseAboutUsImages = 'assets/about-us/';
   imageOneName = 'about-us-one';
+  imageOneMobileName = 'about-us-one-mobile';
   imageTwoName = 'about-us-two';
+  imageTwoMobileName = 'about-us-two-mobile';
   imageThreeName = 'about-us-three';
   imageFourName = 'about-us-four';
   imageExtension = '.png';
