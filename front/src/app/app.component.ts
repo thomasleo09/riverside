@@ -29,7 +29,7 @@ export class AppComponent {
   constructor(public router: Router, public googleAnalyticsService: GoogleAnalyticsService) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        gtag('config', 'G-4TSS3Y3JBK',
+        gtag('config', 'G-79Y316T7ED',
           {
             page_path: event.urlAfterRedirects
           }
